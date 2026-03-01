@@ -2,53 +2,9 @@
   "kind": "feature_evidence_report",
   "features": [
     {
-      "featureId": "feature-create-a-responsive-multi-page-react-application-with-client-side-routing-for-five-pages-home-lessons-videos-about-and-contact-use-react-router-for-navigation-between-pages",
-      "featureTitle": "Create a responsive multi-page React application with client-side routing for five pages: Home, Lessons, Videos, About, and Contact. Use React Router for navigation between pages.",
+      "featureId": "feature-update-the-subtitle-tagline-span-element-on-the-home-page-hero-section-located-at-xpath-html-1-body-1-div-1-div-1-main-1-div-1-section-1-div-4-div-1-span-2-to-reflect-that-the-course-is-for-learners-worldwide-not-only-indian-learners-replace-any-text-referencing-indian-learners-with-inclusive-language-such-as-learners-worldwide-or-students-around-the-world",
+      "featureTitle": "Update the subtitle/tagline span element on the Home page hero section (located at XPath /html[1]/body[1]/div[1]/div[1]/main[1]/div[1]/section[1]/div[4]/div[1]/span[2]) to reflect that the course is for learners worldwide, not only Indian learners. Replace any text referencing 'Indian learners' with inclusive language such as 'learners worldwide' or 'students around the world'.",
       "files": [
-        "frontend/src/App.tsx",
-        "frontend/src/pages/About.tsx",
-        "frontend/src/pages/Contact.tsx",
-        "frontend/src/pages/Home.tsx",
-        "frontend/src/pages/Lessons.tsx",
-        "frontend/src/pages/Videos.tsx"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-1"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-implement-a-clean-sticky-navigation-bar-with-the-channel-name-reema-s-italian-studio-as-the-logo-brand-on-the-left-and-nav-links-home-lessons-videos-about-contact-on-the-right-include-a-hamburger-menu-for-mobile-viewports-add-subtle-italian-flag-color-accents-green-white-red-to-the-nav",
-      "featureTitle": "Implement a clean, sticky navigation bar with the channel name 'Reema's Italian Studio' as the logo/brand on the left, and nav links (Home, Lessons, Videos, About, Contact) on the right. Include a hamburger menu for mobile viewports. Add subtle Italian flag color accents (green, white, red) to the nav.",
-      "files": [
-        "frontend/src/App.tsx",
-        "frontend/src/components/Navigation.tsx"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-2"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-build-the-home-page-with-1-a-hero-section-with-the-heading-learn-italian-easily-step-by-step-a-short-tagline-and-two-cta-buttons-start-learning-routes-to-lessons-and-watch-on-youtube-opens-youtube-channel-in-new-tab-2-a-featured-lessons-section-showing-3-lesson-cards-3-a-testimonials-section-with-at-least-3-dummy-testimonials-from-indian-learners-4-a-footer-with-social-media-links-youtube-instagram-facebook-use-the-italian-flag-hero-image-as-the-background-or-accent-for-the-hero-section",
-      "featureTitle": "Build the Home page with: (1) a hero section with the heading 'Learn Italian Easily — Step by Step 🇮🇹', a short tagline, and two CTA buttons: 'Start Learning' (routes to /lessons) and 'Watch on YouTube' (opens YouTube channel in new tab); (2) a 'Featured Lessons' section showing 3 lesson cards; (3) a Testimonials section with at least 3 dummy testimonials from Indian learners; (4) a footer with social media links (YouTube, Instagram, Facebook). Use the Italian flag hero image as the background or accent for the hero section.",
-      "files": [
-        "frontend/src/components/Footer.tsx",
-        "frontend/src/components/LessonCard.tsx",
         "frontend/src/pages/Home.tsx"
       ],
       "components": [
@@ -59,118 +15,7 @@
         "github-export-icp-cli@1.0.0"
       ],
       "testIds": [
-        "REQ-3"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-build-the-lessons-page-with-three-categorized-sections-beginner-lessons-vocabulary-lessons-and-grammar-lessons-each-section-contains-at-least-4-lesson-cards-each-card-must-show-a-title-short-description-and-a-start-lesson-button-use-dummy-lesson-content-relevant-to-italian-language-learning-e-g-italian-alphabet-common-greetings-numbers-1-20-articles-in-italian",
-      "featureTitle": "Build the Lessons page with three categorized sections: 'Beginner Lessons', 'Vocabulary Lessons', and 'Grammar Lessons'. Each section contains at least 4 lesson cards. Each card must show a title, short description, and a 'Start Lesson' button. Use dummy lesson content relevant to Italian language learning (e.g., 'Italian Alphabet', 'Common Greetings', 'Numbers 1–20', 'Articles in Italian').",
-      "files": [
-        "frontend/src/pages/Lessons.tsx"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-4"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-build-the-videos-page-with-a-grid-layout-of-embedded-youtube-video-cards-use-real-or-placeholder-youtube-video-embed-urls-iframe-embeds-show-at-least-6-video-cards-in-a-responsive-grid-3-columns-on-desktop-2-on-tablet-1-on-mobile-each-card-should-show-the-video-embed-and-a-title-below-it",
-      "featureTitle": "Build the Videos page with a grid layout of embedded YouTube video cards. Use real or placeholder YouTube video embed URLs (iframe embeds). Show at least 6 video cards in a responsive grid (3 columns on desktop, 2 on tablet, 1 on mobile). Each card should show the video embed and a title below it.",
-      "files": [
-        "frontend/src/components/VideoCard.tsx",
-        "frontend/src/pages/Videos.tsx"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-5"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-build-the-about-page-with-three-sections-1-meet-your-teacher-a-teacher-introduction-with-a-placeholder-avatar-image-name-reema-and-a-short-bio-2-our-mission-describing-the-channel-s-goal-to-make-italian-accessible-to-indian-learners-3-why-learn-italian-listing-benefits-of-learning-italian-with-icons-or-bullet-points",
-      "featureTitle": "Build the About page with three sections: (1) 'Meet Your Teacher' — a teacher introduction with a placeholder avatar image, name 'Reema', and a short bio; (2) 'Our Mission' — describing the channel's goal to make Italian accessible to Indian learners; (3) 'Why Learn Italian?' — listing benefits of learning Italian with icons or bullet points.",
-      "files": [
-        "frontend/src/pages/About.tsx"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-6"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-build-the-contact-page-with-1-a-contact-form-with-fields-for-name-email-and-message-plus-a-submit-button-form-submission-should-show-a-success-confirmation-message-no-backend-required-frontend-only-2-a-social-media-links-section-showing-youtube-instagram-and-facebook-links-with-icons",
-      "featureTitle": "Build the Contact page with: (1) a contact form with fields for Name, Email, and Message, plus a Submit button. Form submission should show a success confirmation message (no backend required — frontend only); (2) a social media links section showing YouTube, Instagram, and Facebook links with icons.",
-      "files": [
-        "frontend/src/pages/Contact.tsx"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-7"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-apply-a-consistent-visual-theme-across-all-pages-using-the-italian-flag-palette-forest-green-009246-white-ffffff-and-red-ce2b37-as-primary-accent-colors-on-a-soft-neutral-background-e-g-warm-off-white-faf8f5-use-elegant-readable-typography-e-g-a-serif-display-font-for-headings-clean-sans-serif-for-body-add-smooth-scrolling-behavior-globally-include-subtle-italian-flag-color-bar-or-divider-accents-throughout-the-ui-for-a-cohesive-national-theme",
-      "featureTitle": "Apply a consistent visual theme across all pages using the Italian flag palette: forest green (#009246), white (#FFFFFF), and red (#CE2B37) as primary accent colors on a soft neutral background (e.g., warm off-white #FAF8F5). Use elegant, readable typography (e.g., a serif display font for headings, clean sans-serif for body). Add smooth scrolling behavior globally. Include subtle Italian flag color bar or divider accents throughout the UI for a cohesive national theme.",
-      "files": [
-        "frontend/src/components/ItalianAccent.tsx",
-        "frontend/src/index.css",
-        "frontend/tailwind.config.js"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-8"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-create-a-reusable-footer-component-rendered-on-all-pages-include-the-channel-name-a-short-tagline-navigation-links-and-social-media-icons-youtube-instagram-facebook-style-the-footer-with-a-dark-background-and-white-accent-colored-text",
-      "featureTitle": "Create a reusable Footer component rendered on all pages. Include: the channel name, a short tagline, navigation links, and social media icons (YouTube, Instagram, Facebook). Style the footer with a dark background and white/accent-colored text.",
-      "files": [
-        "frontend/src/App.tsx"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-9"
+        "REQ-1"
       ],
       "confidence": "high"
     }

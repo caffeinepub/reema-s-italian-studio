@@ -35,7 +35,7 @@ const testimonials = [
   {
     name: 'Arjun Mehta',
     location: 'Delhi, India',
-    quote: 'The lessons are perfectly structured for Indian learners. Reema explains grammar in a way that actually makes sense. Highly recommended!',
+    quote: 'The lessons are perfectly structured for beginners. Reema explains grammar in a way that actually makes sense. Highly recommended!',
     rating: 5,
     avatar: 'AM',
   },
@@ -49,7 +49,7 @@ const testimonials = [
   {
     name: 'Rohan Gupta',
     location: 'Bangalore, India',
-    quote: 'Best free Italian learning resource for Indians! The pronunciation guides helped me sound much more natural. Bellissimo!',
+    quote: 'Best free Italian learning resource online! The pronunciation guides helped me sound much more natural. Bellissimo!',
     rating: 5,
     avatar: 'RG',
   },
@@ -72,7 +72,7 @@ export default function Home() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm border border-green-100 rounded-full px-4 py-1.5 text-sm text-italian-green font-medium mb-6 shadow-xs">
             <span>🇮🇹</span>
-            <span>Free Italian Lessons for Indian Learners</span>
+            <span>Free Italian Lessons for Learners Worldwide</span>
           </div>
 
           <h1 className="font-display text-4xl md:text-6xl font-bold text-stone-800 leading-tight mb-6">
@@ -82,7 +82,7 @@ export default function Home() {
           </h1>
 
           <p className="text-stone-500 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
-            Join thousands of Indian learners mastering Italian with Reema — your friendly guide to the beautiful language of Italy. From alphabet to conversations, we've got you covered!
+            Join thousands of learners worldwide mastering Italian with Reema — your friendly guide to the beautiful language of Italy. From alphabet to conversations, we've got you covered!
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -140,7 +140,7 @@ export default function Home() {
               <span className="text-italian-green text-sm font-semibold uppercase tracking-wider">Meet Your Guide</span>
               <h2 className="font-display text-3xl font-bold text-stone-800 mt-1 mb-4">Ciao! I'm Reema 👩‍🏫</h2>
               <p className="text-stone-500 leading-relaxed max-w-xl">
-                I'm a passionate Italian language educator dedicated to making Italian accessible to every Indian learner. With years of teaching experience and a deep love for Italian culture, I've designed these lessons specifically for Indian students — using familiar examples and a step-by-step approach that actually works.
+                I'm a passionate Italian language educator dedicated to making Italian accessible to learners everywhere around the world. With years of teaching experience and a deep love for Italian culture, I've designed these lessons with a clear, step-by-step approach that actually works — no matter where you're from.
               </p>
               <Link
                 to="/about"
@@ -187,7 +187,7 @@ export default function Home() {
           <div className="text-center mb-10">
             <span className="text-italian-green text-sm font-semibold uppercase tracking-wider">Student Stories</span>
             <h2 className="font-display text-3xl md:text-4xl font-bold text-stone-800 mt-1">What Our Students Say</h2>
-            <p className="text-stone-500 mt-3">Real feedback from real learners across India</p>
+            <p className="text-stone-500 mt-3">Real feedback from real learners around the world</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {testimonials.map((t) => (
@@ -220,7 +220,7 @@ export default function Home() {
             Ready to Speak Italian? 🇮🇹
           </h2>
           <p className="text-green-100 text-lg mb-8 max-w-xl mx-auto">
-            Join thousands of Indian learners who are already on their Italian journey. It's free, fun, and effective!
+            Join thousands of learners from around the world who are already on their Italian journey. It's free, fun, and effective!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

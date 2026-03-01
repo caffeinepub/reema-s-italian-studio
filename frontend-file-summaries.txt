@@ -5,7 +5,7 @@
   "frontend/src/components/ItalianAccent.tsx": "Reusable horizontal tricolor divider component using Italian flag colors (green, white, red) for visual section separation.",
   "frontend/src/components/LessonCard.tsx": "Reusable lesson card component with icon, category badge, title, description, and a \"Start Lesson\" button linking to the lessons page.",
   "frontend/src/components/VideoCard.tsx": "Reusable video card component rendering a 16:9 YouTube iframe embed with a title below it.",
-  "frontend/src/pages/Home.tsx": "Home page with hero section (heading, tagline, CTA buttons, stats), teacher intro, featured lessons grid, testimonials from Indian learners, and a CTA banner.",
+  "frontend/src/pages/Home.tsx": "Home page with hero section, teacher intro, featured lessons grid, worldwide student testimonials, and a CTA banner — all references to \"Indian learners\" have been updated to inclusive \"learners worldwide\" / \"learners around the world\" language.",
   "frontend/src/pages/Lessons.tsx": "Lessons page with three categorized sections (Beginner, Vocabulary, Grammar), each containing 4–5 lesson cards in a responsive grid layout.",
   "frontend/src/pages/Videos.tsx": "Videos page with a responsive 3-column grid of 9 YouTube video cards, a subscribe CTA, and a \"more videos\" prompt section.",
   "frontend/src/pages/About.tsx": "About page with three sections: Meet Your Teacher (avatar + bio), Our Mission (channel goals), and Why Learn Italian (6 benefit cards with icons).",
