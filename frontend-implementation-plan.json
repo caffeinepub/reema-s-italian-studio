@@ -1,0 +1,214 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Reema's Italian Studio — Educational Language Learning Website",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "summary": "Create responsive React application with client-side routing for Home, Lessons, Videos, About, and Contact pages",
+      "acceptanceCriteria": [
+        "Navigation bar links correctly route to all five pages",
+        "Active page link is visually highlighted in the nav",
+        "App works correctly on both mobile and desktop screen sizes"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Set up React Router with Routes for Home (/), Lessons (/lessons), Videos (/videos), About (/about), and Contact (/contact) pages. Import and configure BrowserRouter with route definitions for all five pages."
+        },
+        {
+          "path": "frontend/src/pages/Home.tsx",
+          "operation": "create",
+          "description": "Create Home page component that will serve as the landing page at root route (/). This component will be populated with hero section, featured lessons, testimonials, and footer in subsequent requirements."
+        },
+        {
+          "path": "frontend/src/pages/Lessons.tsx",
+          "operation": "create",
+          "description": "Create Lessons page component for the /lessons route. This component will display categorized lesson sections and cards."
+        },
+        {
+          "path": "frontend/src/pages/Videos.tsx",
+          "operation": "create",
+          "description": "Create Videos page component for the /videos route. This component will display YouTube video embeds in a responsive grid."
+        },
+        {
+          "path": "frontend/src/pages/About.tsx",
+          "operation": "create",
+          "description": "Create About page component for the /about route. This component will display teacher introduction, mission statement, and benefits of learning Italian."
+        },
+        {
+          "path": "frontend/src/pages/Contact.tsx",
+          "operation": "create",
+          "description": "Create Contact page component for the /contact route. This component will contain a contact form and social media links."
+        }
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "summary": "Implement sticky navigation bar with brand logo, nav links, hamburger menu for mobile, and Italian flag color accents",
+      "acceptanceCriteria": [
+        "Nav is sticky and visible on scroll",
+        "Hamburger menu appears on mobile and toggles nav links",
+        "Italian flag accent colors appear in the nav design"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Navigation.tsx",
+          "operation": "create",
+          "description": "Create responsive Navigation component with sticky positioning. Display 'Reema's Italian Studio' as brand logo on the left. Include nav links (Home, Lessons, Videos, About, Contact) on the right with active link highlighting using NavLink from react-router-dom. Implement hamburger menu icon for mobile viewports that toggles mobile nav menu visibility. Apply Italian flag accent colors (green #009246, red #CE2B37) as border accent or logo styling."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Import and render Navigation component above the Routes section so it appears on all pages as a persistent sticky header."
+        }
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "summary": "Build Home page with hero section, featured lessons, testimonials, and footer; integrate Italian flag hero image",
+      "acceptanceCriteria": [
+        "Hero section renders heading, tagline, and both CTA buttons",
+        "'Start Learning' routes to /lessons",
+        "'Watch on YouTube' opens a YouTube link in a new tab",
+        "At least 3 dummy testimonials are displayed with name and quote",
+        "Footer includes working social media icon links"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/Home.tsx",
+          "operation": "modify",
+          "description": "Implement hero section with heading 'Learn Italian Easily — Step by Step 🇮🇹', a tagline, and two CTA buttons: 'Start Learning' (Link to /lessons) and 'Watch on YouTube' (external link with target='_blank'). Use the generated Italian flag hero image frontend/public/assets/generated/hero-banner.dim_1200x500.png as background or accent. Add a Featured Lessons section displaying 3 lesson cards with title, description, and link. Add a Testimonials section with at least 3 dummy testimonials (name, quote, origin) from Indian learners. Render the Footer component at the bottom."
+        },
+        {
+          "path": "frontend/src/components/Footer.tsx",
+          "operation": "create",
+          "description": "Create reusable Footer component with dark background and light text. Display channel name 'Reema's Italian Studio', a short tagline, navigation links to all five pages, and social media icons (YouTube, Instagram, Facebook) with clickable external links. Style with Italian flag accent colors for links or icons."
+        },
+        {
+          "path": "frontend/src/components/LessonCard.tsx",
+          "operation": "create",
+          "description": "Create reusable LessonCard component that accepts props for title, description, and link/button action. Use consistent card styling with hover effects. This component will be used on Home page (Featured Lessons) and Lessons page."
+        }
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "summary": "Build Lessons page with three categorized sections (Beginner, Vocabulary, Grammar) each containing at least 4 lesson cards",
+      "acceptanceCriteria": [
+        "Three distinct sections are visible: Beginner, Vocabulary, and Grammar",
+        "Each section contains at least 4 lesson cards",
+        "Each card shows title, description, and a button",
+        "Cards are responsive and display in a grid on desktop, stacked on mobile"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/Lessons.tsx",
+          "operation": "modify",
+          "description": "Implement three categorized sections: 'Beginner Lessons', 'Vocabulary Lessons', and 'Grammar Lessons'. Each section displays at least 4 lesson cards using the LessonCard component. Use dummy lesson data relevant to Italian language learning (e.g., 'Italian Alphabet', 'Common Greetings', 'Numbers 1–20', 'Articles in Italian', 'Italian Pronouns', 'Food Vocabulary', 'Colors and Shapes', 'Present Tense Verbs', 'Past Tense', 'Question Words', 'Body Parts Vocabulary', 'Adjectives'). Implement responsive grid layout: multiple columns on desktop, stacked on mobile. Use the generated lessons icons image frontend/public/assets/generated/lessons-icons.dim_512x128.png as section decorations or icons."
+        }
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "summary": "Build Videos page with responsive grid of embedded YouTube video cards",
+      "acceptanceCriteria": [
+        "At least 6 YouTube video iframes are displayed",
+        "Grid adapts to 3 columns on desktop, 2 on tablet, 1 on mobile",
+        "Each video card shows the embed and a descriptive title"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/Videos.tsx",
+          "operation": "modify",
+          "description": "Implement responsive grid layout of at least 6 YouTube video cards. Each card contains an iframe embed (using placeholder or real YouTube video URLs) and a descriptive title below it. Configure grid to display 3 columns on desktop, 2 on tablet, and 1 on mobile using Tailwind responsive classes. Use dummy video data with Italian language learning titles (e.g., 'Italian Alphabet Tutorial', 'Learn Italian Greetings', 'Italian Numbers 1-100', 'Common Italian Phrases', 'Italian Pronunciation Guide', 'Italian Verb Conjugation Basics')."
+        },
+        {
+          "path": "frontend/src/components/VideoCard.tsx",
+          "operation": "create",
+          "description": "Create reusable VideoCard component that accepts props for YouTube embed URL and video title. Render iframe with proper aspect ratio (16:9) and responsive sizing. Display title below the embed with consistent styling."
+        }
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "summary": "Build About page with teacher introduction, mission statement, and benefits of learning Italian",
+      "acceptanceCriteria": [
+        "Three distinct sections render on the About page",
+        "Teacher section includes a placeholder avatar, name, and bio text",
+        "Mission section explains channel goals",
+        "'Why learn Italian?' section lists at least 5 benefits"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/About.tsx",
+          "operation": "modify",
+          "description": "Implement three sections: (1) 'Meet Your Teacher' with the generated teacher avatar image frontend/public/assets/generated/teacher-avatar.dim_400x400.png, name 'Reema', and a short bio introducing the teacher; (2) 'Our Mission' section describing the channel's goal to make Italian accessible to Indian learners; (3) 'Why Learn Italian?' section listing at least 5 benefits of learning Italian with icons or bullet points (e.g., career opportunities, cultural enrichment, travel, cognitive benefits, connecting with Italian heritage). Use consistent section spacing and styling."
+        }
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "summary": "Build Contact page with frontend-only contact form and social media links section",
+      "acceptanceCriteria": [
+        "Form renders Name, Email, and Message fields",
+        "Submit button triggers a visible success message",
+        "Form validates that required fields are not empty before submission",
+        "Social media links section is visible below or beside the form"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/Contact.tsx",
+          "operation": "modify",
+          "description": "Implement contact form with Name, Email, and Message input fields plus a Submit button. Add frontend-only form validation to check required fields are not empty. On submit, display a success confirmation message without making any backend calls. Include a social media links section below or beside the form showing YouTube, Instagram, and Facebook icons with clickable external links. Use React state to manage form inputs and success message visibility."
+        }
+      ]
+    },
+    {
+      "id": "REQ-8",
+      "summary": "Apply consistent Italian flag color theme, elegant typography, smooth scrolling, and accent elements across all pages",
+      "acceptanceCriteria": [
+        "Green, white, and red accents are consistently applied across all pages",
+        "Background uses a soft neutral color, not pure white",
+        "Smooth scrolling is enabled site-wide",
+        "Typography is consistent: distinct display font for headings, readable font for body text",
+        "Italian flag accent elements (e.g., color bar, dividers) appear on multiple pages"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/index.css",
+          "operation": "modify",
+          "description": "Define global CSS custom properties for Italian flag color palette: --color-italian-green: #009246, --color-italian-red: #CE2B37, --color-neutral-bg: #FAF8F5. Set body background to soft neutral (#FAF8F5). Import and configure elegant typography using Google Fonts: a serif display font (e.g., Playfair Display, Lora) for headings and a clean sans-serif (e.g., Inter, Open Sans) for body text. Enable smooth scrolling behavior globally with html { scroll-behavior: smooth; }. Add utility classes for Italian flag accent bars or dividers (e.g., .italian-accent-bar with tricolor gradient or border)."
+        },
+        {
+          "path": "frontend/tailwind.config.js",
+          "operation": "modify",
+          "description": "Extend Tailwind theme with custom colors for Italian flag palette: italianGreen (#009246), italianRed (#CE2B37), neutralBg (#FAF8F5). Configure custom font families for display (serif) and body (sans-serif) text. Ensure responsive breakpoints are configured for mobile, tablet, and desktop layouts."
+        },
+        {
+          "path": "frontend/src/components/ItalianAccent.tsx",
+          "operation": "create",
+          "description": "Create reusable ItalianAccent component (e.g., a horizontal tricolor bar or divider) using Italian flag colors (green, white, red) that can be placed between sections on various pages for visual cohesion and national theme accent."
+        }
+      ]
+    },
+    {
+      "id": "REQ-9",
+      "summary": "Create reusable Footer component and render it on all pages",
+      "acceptanceCriteria": [
+        "Footer appears on all five pages",
+        "Channel name, tagline, nav links, and social icons are all present",
+        "Footer has a dark background with light text",
+        "Social icon links are clickable"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Import and render the Footer component below the Routes section so it appears on all pages at the bottom. Ensure Footer is included in the main layout structure."
+        }
+      ]
+    }
+  ]
+}

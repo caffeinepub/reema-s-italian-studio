@@ -1,0 +1,15 @@
+{
+  "frontend/src/App.tsx": "Main app component using TanStack Router with a root layout (Navigation + Outlet + Footer) and five routes: Home (/), Lessons (/lessons), Videos (/videos), About (/about), and Contact (/contact).",
+  "frontend/src/components/Navigation.tsx": "Sticky responsive navigation bar with Italian flag tricolor top accent, brand logo, desktop nav links with active highlighting, and a mobile hamburger menu toggle.",
+  "frontend/src/components/Footer.tsx": "Dark-themed footer with Italian flag accent bar, channel branding, quick navigation links, social media icons (YouTube, Instagram, Facebook), and caffeine.ai attribution.",
+  "frontend/src/components/ItalianAccent.tsx": "Reusable horizontal tricolor divider component using Italian flag colors (green, white, red) for visual section separation.",
+  "frontend/src/components/LessonCard.tsx": "Reusable lesson card component with icon, category badge, title, description, and a \"Start Lesson\" button linking to the lessons page.",
+  "frontend/src/components/VideoCard.tsx": "Reusable video card component rendering a 16:9 YouTube iframe embed with a title below it.",
+  "frontend/src/pages/Home.tsx": "Home page with hero section (heading, tagline, CTA buttons, stats), teacher intro, featured lessons grid, testimonials from Indian learners, and a CTA banner.",
+  "frontend/src/pages/Lessons.tsx": "Lessons page with three categorized sections (Beginner, Vocabulary, Grammar), each containing 4–5 lesson cards in a responsive grid layout.",
+  "frontend/src/pages/Videos.tsx": "Videos page with a responsive 3-column grid of 9 YouTube video cards, a subscribe CTA, and a \"more videos\" prompt section.",
+  "frontend/src/pages/About.tsx": "About page with three sections: Meet Your Teacher (avatar + bio), Our Mission (channel goals), and Why Learn Italian (6 benefit cards with icons).",
+  "frontend/src/pages/Contact.tsx": "Contact page with a validated contact form (name, email, message) showing a success state on submission, plus social media links and contact info sidebar.",
+  "frontend/src/index.css": "Global styles with Italian flag OKLCH color tokens, Playfair Display + Inter Google Fonts import, smooth scrolling, and utility classes for Italian theme colors.",
+  "frontend/tailwind.config.js": "Extended Tailwind config with Italian flag colors (italian-green, italian-red, neutral-bg), Playfair Display display font, Inter body font, and refined shadow/radius scales."
+}

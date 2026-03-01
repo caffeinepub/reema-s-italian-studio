@@ -1,0 +1,216 @@
+{
+  "kind": "build_request",
+  "title": "Reema's Italian Studio — Educational Language Learning Website",
+  "projectName": "Reema's Italian Studio",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Create a responsive multi-page React application with client-side routing for five pages: Home, Lessons, Videos, About, and Contact. Use React Router for navigation between pages.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Pages Required: 1. Home Page, 2. Lessons Page, 3. Video Page, 4. About Page, 5. Contact Page"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Navigation bar links correctly route to all five pages",
+        "Active page link is visually highlighted in the nav",
+        "App works correctly on both mobile and desktop screen sizes"
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Implement a clean, sticky navigation bar with the channel name 'Reema's Italian Studio' as the logo/brand on the left, and nav links (Home, Lessons, Videos, About, Contact) on the right. Include a hamburger menu for mobile viewports. Add subtle Italian flag color accents (green, white, red) to the nav.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Clean navigation bar",
+          "Italian flag accents",
+          "Fully responsive for mobile and desktop"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Nav is sticky and visible on scroll",
+        "Hamburger menu appears on mobile and toggles nav links",
+        "Italian flag accent colors appear in the nav design"
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "text": "Build the Home page with: (1) a hero section with the heading 'Learn Italian Easily — Step by Step 🇮🇹', a short tagline, and two CTA buttons: 'Start Learning' (routes to /lessons) and 'Watch on YouTube' (opens YouTube channel in new tab); (2) a 'Featured Lessons' section showing 3 lesson cards; (3) a Testimonials section with at least 3 dummy testimonials from Indian learners; (4) a footer with social media links (YouTube, Instagram, Facebook). Use the Italian flag hero image as the background or accent for the hero section.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Attractive hero section with title: 'Learn Italian Easily — Step by Step 🇮🇹'",
+          "Buttons: 'Start Learning' and 'Watch on YouTube'",
+          "Featured lessons section",
+          "Testimonials section (dummy content)",
+          "Footer with social links"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Hero section renders heading, tagline, and both CTA buttons",
+        "'Start Learning' routes to /lessons",
+        "'Watch on YouTube' opens a YouTube link in a new tab",
+        "At least 3 dummy testimonials are displayed with name and quote",
+        "Footer includes working social media icon links"
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "text": "Build the Lessons page with three categorized sections: 'Beginner Lessons', 'Vocabulary Lessons', and 'Grammar Lessons'. Each section contains at least 4 lesson cards. Each card must show a title, short description, and a 'Start Lesson' button. Use dummy lesson content relevant to Italian language learning (e.g., 'Italian Alphabet', 'Common Greetings', 'Numbers 1–20', 'Articles in Italian').",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Beginner lessons list",
+          "Vocabulary lessons",
+          "Grammar lessons",
+          "Each lesson card should have title, short description, and button"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Three distinct sections are visible: Beginner, Vocabulary, and Grammar",
+        "Each section contains at least 4 lesson cards",
+        "Each card shows title, description, and a button",
+        "Cards are responsive and display in a grid on desktop, stacked on mobile"
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "text": "Build the Videos page with a grid layout of embedded YouTube video cards. Use real or placeholder YouTube video embed URLs (iframe embeds). Show at least 6 video cards in a responsive grid (3 columns on desktop, 2 on tablet, 1 on mobile). Each card should show the video embed and a title below it.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Embedded YouTube video section",
+          "Grid layout for videos"
+        ]
+      },
+      "acceptanceCriteria": [
+        "At least 6 YouTube video iframes are displayed",
+        "Grid adapts to 3 columns on desktop, 2 on tablet, 1 on mobile",
+        "Each video card shows the embed and a descriptive title"
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "text": "Build the About page with three sections: (1) 'Meet Your Teacher' — a teacher introduction with a placeholder avatar image, name 'Reema', and a short bio; (2) 'Our Mission' — describing the channel's goal to make Italian accessible to Indian learners; (3) 'Why Learn Italian?' — listing benefits of learning Italian with icons or bullet points.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Teacher introduction",
+          "Mission of the channel",
+          "Why learn Italian?"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Three distinct sections render on the About page",
+        "Teacher section includes a placeholder avatar, name, and bio text",
+        "Mission section explains channel goals",
+        "'Why learn Italian?' section lists at least 5 benefits"
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "text": "Build the Contact page with: (1) a contact form with fields for Name, Email, and Message, plus a Submit button. Form submission should show a success confirmation message (no backend required — frontend only); (2) a social media links section showing YouTube, Instagram, and Facebook links with icons.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Simple contact form (Name, Email, Message)",
+          "Social media links"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Form renders Name, Email, and Message fields",
+        "Submit button triggers a visible success message",
+        "Form validates that required fields are not empty before submission",
+        "Social media links section is visible below or beside the form"
+      ]
+    },
+    {
+      "id": "REQ-8",
+      "text": "Apply a consistent visual theme across all pages using the Italian flag palette: forest green (#009246), white (#FFFFFF), and red (#CE2B37) as primary accent colors on a soft neutral background (e.g., warm off-white #FAF8F5). Use elegant, readable typography (e.g., a serif display font for headings, clean sans-serif for body). Add smooth scrolling behavior globally. Include subtle Italian flag color bar or divider accents throughout the UI for a cohesive national theme.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Clean, elegant, minimal, modern",
+          "Use colors: green, white, red (Italian theme) with soft neutral backgrounds",
+          "Smooth scrolling",
+          "Italian flag accents",
+          "Friendly, welcoming design"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Green, white, and red accents are consistently applied across all pages",
+        "Background uses a soft neutral color, not pure white",
+        "Smooth scrolling is enabled site-wide",
+        "Typography is consistent: distinct display font for headings, readable font for body text",
+        "Italian flag accent elements (e.g., color bar, dividers) appear on multiple pages"
+      ]
+    },
+    {
+      "id": "REQ-9",
+      "text": "Create a reusable Footer component rendered on all pages. Include: the channel name, a short tagline, navigation links, and social media icons (YouTube, Instagram, Facebook). Style the footer with a dark background and white/accent-colored text.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Attractive footer",
+          "Footer with social links"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Footer appears on all five pages",
+        "Channel name, tagline, nav links, and social icons are all present",
+        "Footer has a dark background with light text",
+        "Social icon links are clickable"
+      ]
+    }
+  ],
+  "constraints": [
+    "No backend logic or data persistence is required — all content is static/dummy data on the frontend",
+    "Do not modify files under frontend/src/hooks/ or frontend/src/components/ui/",
+    "Contact form submission must be handled entirely on the frontend (no backend canister call needed)"
+  ],
+  "nonGoals": [
+    "No user authentication or login system",
+    "No backend canister data storage for lessons or contact form submissions",
+    "No real YouTube API integration — use static embed URLs",
+    "No payment or subscription features",
+    "No multilingual (non-English/Italian) UI support beyond Italian vocabulary in lesson content"
+  ],
+  "imageRequirements": {
+    "required": [
+      "Italian flag-themed decorative hero banner with subtle watercolor texture in green, white, and red gradient bands, horizontal orientation (hero-banner.dim_1200x500.png)",
+      "Friendly female teacher avatar illustration with warm skin tone, dark hair, smiling, minimal flat style on white circle background (teacher-avatar.dim_400x400.png)",
+      "Italian language learning icon set: small flat icons for alphabet, vocabulary, grammar, and pronunciation on transparent background (lessons-icons.dim_512x128.png)"
+    ],
+    "edits": []
+  }
+}

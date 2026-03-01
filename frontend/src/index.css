@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.75rem;
+
+    /* Italian flag palette */
+    --italian-green: oklch(0.55 0.16 152);
+    --italian-red: oklch(0.48 0.20 25);
+    --neutral-bg: oklch(0.98 0.005 80);
+
+    /* Semantic tokens — light mode */
+    --background: 0.98 0.005 80;
+    --foreground: 0.18 0.01 60;
+    --card: 1 0 0;
+    --card-foreground: 0.18 0.01 60;
+    --popover: 1 0 0;
+    --popover-foreground: 0.18 0.01 60;
+    --primary: 0.55 0.16 152;
+    --primary-foreground: 1 0 0;
+    --secondary: 0.95 0.01 80;
+    --secondary-foreground: 0.18 0.01 60;
+    --muted: 0.95 0.01 80;
+    --muted-foreground: 0.50 0.01 60;
+    --accent: 0.95 0.01 80;
+    --accent-foreground: 0.18 0.01 60;
+    --destructive: 0.48 0.20 25;
+    --destructive-foreground: 1 0 0;
+    --border: 0.90 0.005 80;
+    --input: 0.90 0.005 80;
+    --ring: 0.55 0.16 152;
+    --chart-1: 0.55 0.16 152;
+    --chart-2: 0.48 0.20 25;
+    --chart-3: 0.70 0.12 80;
+    --chart-4: 0.65 0.15 200;
+    --chart-5: 0.60 0.18 300;
+    --sidebar: 0.98 0.005 80;
+    --sidebar-foreground: 0.18 0.01 60;
+    --sidebar-primary: 0.55 0.16 152;
+    --sidebar-primary-foreground: 1 0 0;
+    --sidebar-accent: 0.95 0.01 80;
+    --sidebar-accent-foreground: 0.18 0.01 60;
+    --sidebar-border: 0.90 0.005 80;
+    --sidebar-ring: 0.55 0.16 152;
+  }
+
+  .dark {
+    --background: 0.14 0.01 60;
+    --foreground: 0.95 0.005 80;
+    --card: 0.18 0.01 60;
+    --card-foreground: 0.95 0.005 80;
+    --popover: 0.22 0.01 60;
+    --popover-foreground: 0.95 0.005 80;
+    --primary: 0.60 0.16 152;
+    --primary-foreground: 0.10 0.01 60;
+    --secondary: 0.22 0.01 60;
+    --secondary-foreground: 0.95 0.005 80;
+    --muted: 0.22 0.01 60;
+    --muted-foreground: 0.65 0.01 60;
+    --accent: 0.28 0.01 60;
+    --accent-foreground: 0.95 0.005 80;
+    --destructive: 0.55 0.20 25;
+    --destructive-foreground: 0.95 0.005 80;
+    --border: 1 0 0 / 10%;
+    --input: 1 0 0 / 15%;
+    --ring: 0.60 0.16 152;
+    --chart-1: 0.60 0.16 152;
+    --chart-2: 0.55 0.20 25;
+    --chart-3: 0.70 0.12 80;
+    --chart-4: 0.65 0.15 200;
+    --chart-5: 0.60 0.18 300;
+    --sidebar: 0.18 0.01 60;
+    --sidebar-foreground: 0.95 0.005 80;
+    --sidebar-primary: 0.60 0.16 152;
+    --sidebar-primary-foreground: 0.10 0.01 60;
+    --sidebar-accent: 0.22 0.01 60;
+    --sidebar-accent-foreground: 0.95 0.005 80;
+    --sidebar-border: 1 0 0 / 10%;
+    --sidebar-ring: 0.60 0.16 152;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+
+  .bg-neutral-bg {
+    background-color: var(--neutral-bg);
+  }
+
+  .bg-italian-green {
+    background-color: var(--italian-green);
+  }
+
+  .bg-italian-red {
+    background-color: var(--italian-red);
+  }
+
+  .text-italian-green {
+    color: var(--italian-green);
+  }
+
+  .text-italian-red {
+    color: var(--italian-red);
+  }
+
+  .border-italian-green {
+    border-color: var(--italian-green);
+  }
+
+  .border-italian-red {
+    border-color: var(--italian-red);
+  }
+
+  .ring-italian-green {
+    --tw-ring-color: var(--italian-green);
+  }
+
+  .hover\:bg-italian-green:hover {
+    background-color: var(--italian-green);
+  }
+
+  .hover\:bg-italian-red:hover {
+    background-color: var(--italian-red);
+  }
+
+  .hover\:text-italian-green:hover {
+    color: var(--italian-green);
+  }
+
+  .hover\:text-italian-red:hover {
+    color: var(--italian-red);
+  }
+
+  .focus\:border-italian-green:focus {
+    border-color: var(--italian-green);
+  }
+
+  .focus\:ring-italian-green\/30:focus {
+    --tw-ring-color: oklch(0.55 0.16 152 / 0.3);
+  }
+}

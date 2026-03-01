@@ -1,0 +1,129 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 3,
+  "summary": "Educational website for 'Reema's Italian Studio' YouTube channel. Helps Indian beginners learn Italian through free lessons, videos, vocabulary, grammar, and pronunciation guides. Built with HTML, CSS, and JavaScript only (no frameworks). Italian flag color theme (green, white, red) with clean, modern, minimal design.",
+  "architectural_notes": [
+    "Pure HTML, CSS, JavaScript only — no frameworks or libraries",
+    "Color theme: Italian flag (green, white, red) with soft neutral backgrounds",
+    "Multi-page website: Home, Lessons, Videos, About, Contact"
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "imageRequirements": "## Required Images\n- Italian flag-themed decorative hero banner with subtle watercolor texture in green, white, and red gradient bands, horizontal orientation (hero-banner.dim_1200x500.png)\n- Friendly female teacher avatar illustration with warm skin tone, dark hair, smiling, minimal flat style on white circle background (teacher-avatar.dim_400x400.png)\n- Italian language learning icon set: small flat icons for alphabet, vocabulary, grammar, and pronunciation on transparent background (lessons-icons.dim_512x128.png)",
+  "existing_features": [
+    {
+      "id": "feature-create-a-responsive-multi-page-react-application-with-client-side-routing-for-five-pages-home-lessons-videos-about-and-contact-use-react-router-for-navigation-between-pages",
+      "title": "Create a responsive multi-page React application with client-side routing for five pages: Home, Lessons, Videos, About, and Contact. Use React Router for navigation between pages.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-clean-sticky-navigation-bar-with-the-channel-name-reema-s-italian-studio-as-the-logo-brand-on-the-left-and-nav-links-home-lessons-videos-about-contact-on-the-right-include-a-hamburger-menu-for-mobile-viewports-add-subtle-italian-flag-color-accents-green-white-red-to-the-nav",
+      "title": "Implement a clean, sticky navigation bar with the channel name 'Reema's Italian Studio' as the logo/brand on the left, and nav links (Home, Lessons, Videos, About, Contact) on the right. Include a hamburger menu for mobile viewports. Add subtle Italian flag color accents (green, white, red) to the nav.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-the-home-page-with-1-a-hero-section-with-the-heading-learn-italian-easily-step-by-step-a-short-tagline-and-two-cta-buttons-start-learning-routes-to-lessons-and-watch-on-youtube-opens-youtube-channel-in-new-tab-2-a-featured-lessons-section-showing-3-lesson-cards-3-a-testimonials-section-with-at-least-3-dummy-testimonials-from-indian-learners-4-a-footer-with-social-media-links-youtube-instagram-facebook-use-the-italian-flag-hero-image-as-the-background-or-accent-for-the-hero-section",
+      "title": "Build the Home page with: (1) a hero section with the heading 'Learn Italian Easily — Step by Step 🇮🇹', a short tagline, and two CTA buttons: 'Start Learning' (routes to /lessons) and 'Watch on YouTube' (opens YouTube channel in new tab); (2) a 'Featured Lessons' section showing 3 lesson cards; (3) a Testimonials section with at least 3 dummy testimonials from Indian learners; (4) a footer with social media links (YouTube, Instagram, Facebook). Use the Italian flag hero image as the background or accent for the hero section.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-the-lessons-page-with-three-categorized-sections-beginner-lessons-vocabulary-lessons-and-grammar-lessons-each-section-contains-at-least-4-lesson-cards-each-card-must-show-a-title-short-description-and-a-start-lesson-button-use-dummy-lesson-content-relevant-to-italian-language-learning-e-g-italian-alphabet-common-greetings-numbers-1-20-articles-in-italian",
+      "title": "Build the Lessons page with three categorized sections: 'Beginner Lessons', 'Vocabulary Lessons', and 'Grammar Lessons'. Each section contains at least 4 lesson cards. Each card must show a title, short description, and a 'Start Lesson' button. Use dummy lesson content relevant to Italian language learning (e.g., 'Italian Alphabet', 'Common Greetings', 'Numbers 1–20', 'Articles in Italian').",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-the-videos-page-with-a-grid-layout-of-embedded-youtube-video-cards-use-real-or-placeholder-youtube-video-embed-urls-iframe-embeds-show-at-least-6-video-cards-in-a-responsive-grid-3-columns-on-desktop-2-on-tablet-1-on-mobile-each-card-should-show-the-video-embed-and-a-title-below-it",
+      "title": "Build the Videos page with a grid layout of embedded YouTube video cards. Use real or placeholder YouTube video embed URLs (iframe embeds). Show at least 6 video cards in a responsive grid (3 columns on desktop, 2 on tablet, 1 on mobile). Each card should show the video embed and a title below it.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-the-about-page-with-three-sections-1-meet-your-teacher-a-teacher-introduction-with-a-placeholder-avatar-image-name-reema-and-a-short-bio-2-our-mission-describing-the-channel-s-goal-to-make-italian-accessible-to-indian-learners-3-why-learn-italian-listing-benefits-of-learning-italian-with-icons-or-bullet-points",
+      "title": "Build the About page with three sections: (1) 'Meet Your Teacher' — a teacher introduction with a placeholder avatar image, name 'Reema', and a short bio; (2) 'Our Mission' — describing the channel's goal to make Italian accessible to Indian learners; (3) 'Why Learn Italian?' — listing benefits of learning Italian with icons or bullet points.",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-the-contact-page-with-1-a-contact-form-with-fields-for-name-email-and-message-plus-a-submit-button-form-submission-should-show-a-success-confirmation-message-no-backend-required-frontend-only-2-a-social-media-links-section-showing-youtube-instagram-and-facebook-links-with-icons",
+      "title": "Build the Contact page with: (1) a contact form with fields for Name, Email, and Message, plus a Submit button. Form submission should show a success confirmation message (no backend required — frontend only); (2) a social media links section showing YouTube, Instagram, and Facebook links with icons.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-a-consistent-visual-theme-across-all-pages-using-the-italian-flag-palette-forest-green-009246-white-ffffff-and-red-ce2b37-as-primary-accent-colors-on-a-soft-neutral-background-e-g-warm-off-white-faf8f5-use-elegant-readable-typography-e-g-a-serif-display-font-for-headings-clean-sans-serif-for-body-add-smooth-scrolling-behavior-globally-include-subtle-italian-flag-color-bar-or-divider-accents-throughout-the-ui-for-a-cohesive-national-theme",
+      "title": "Apply a consistent visual theme across all pages using the Italian flag palette: forest green (#009246), white (#FFFFFF), and red (#CE2B37) as primary accent colors on a soft neutral background (e.g., warm off-white #FAF8F5). Use elegant, readable typography (e.g., a serif display font for headings, clean sans-serif for body). Add smooth scrolling behavior globally. Include subtle Italian flag color bar or divider accents throughout the UI for a cohesive national theme.",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-reusable-footer-component-rendered-on-all-pages-include-the-channel-name-a-short-tagline-navigation-links-and-social-media-icons-youtube-instagram-facebook-style-the-footer-with-a-dark-background-and-white-accent-colored-text",
+      "title": "Create a reusable Footer component rendered on all pages. Include: the channel name, a short tagline, navigation links, and social media icons (YouTube, Instagram, Facebook). Style the footer with a dark background and white/accent-colored text.",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Home page with hero section, teacher intro, Start Learning & Watch on YouTube buttons, featured lessons, testimonials, and footer",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Lessons page with beginner, vocabulary, and grammar lesson cards (title, description, button)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Video page with embedded YouTube videos in a grid layout",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "About page with teacher introduction, channel mission, and why learn Italian section",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Contact page with name/email/message form and social media links",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Fully responsive design, smooth scrolling, clean navbar, Italian flag accents, and attractive footer across all pages",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Reema's Italian Studio",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}
